@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
 //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
 
-
                 DialogCitySelect dialogCitySelect = new DialogCitySelect(MainActivity.this);
                 dialogCitySelect.setCallBack(new DialogCitySelect.CallBack() {
                     @Override
