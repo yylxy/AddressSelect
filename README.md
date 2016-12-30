@@ -1,19 +1,19 @@
 使用方法：
 
-
-                DialogCitySelect dialogCitySelect = new DialogCitySelect(MainActivity.this);
+   DialogCitySelect dialogCitySelect = new DialogCitySelect(MainActivity.this);
                 dialogCitySelect.setCallBack(new DialogCitySelect.CallBack() {
                     @Override
                     public void setData(DialogCitySelect.PCCData data) {
-                      
+
                         /**
-                         * 返回的结果
+                         * 返回的结果:省-市-县
+                         *
                          */
-                        
-                        
+                        content.setText(data.province + " - " + data.city + " - " + data.county);
+
                     }
                 });
-                dialogCitySelect.show();
+    dialogCitySelect.show();
 
 
 ###城市选择的效果-1
