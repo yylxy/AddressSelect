@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId "lyxs916.addressselect"
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -18,17 +18,25 @@ android {
         }
     }
 }
-apply plugin: 'com.neenbedankt.android-apt' //添加这行
+//增加依赖的权限
+allprojects {
+    repositories {
+
+        maven { url 'https://jitpack.io' }
+    }
+}
+apply plugin: 'com.neenbedankt.android-apt'
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.android.support:design:25.1.0'
     compile 'com.google.code.gson:gson:2.8.0'
     compile 'com.jakewharton:butterknife:8.4.0'
-    apt 'com.jakewharton:butterknife-compiler:8.4.0' //添加这行
-
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //地址选择
+    compile 'com.github.yylxy:AddressSelect:1.1'
     //引入第三方库
-    compile project(':dialogselectaddress')
+//    compile project(':dialogselectaddress')
 
 
 }
