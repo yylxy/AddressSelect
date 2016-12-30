@@ -1,7 +1,7 @@
 
 ###使用方法
 
-   DialogCitySelect dialogCitySelect = new DialogCitySelect(MainActivity.this);
+        DialogCitySelect dialogCitySelect = new DialogCitySelect(MainActivity.this);
                 dialogCitySelect.setCallBack(new DialogCitySelect.CallBack() {
                     @Override
                     public void setData(DialogCitySelect.PCCData data) {
@@ -14,7 +14,7 @@
 
                     }
                 });
-    dialogCitySelect.show();
+         dialogCitySelect.show();
 
 ###添加依赖
 
