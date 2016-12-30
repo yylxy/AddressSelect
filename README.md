@@ -1,4 +1,5 @@
-使用方法：
+
+###使用方法
 
    DialogCitySelect dialogCitySelect = new DialogCitySelect(MainActivity.this);
                 dialogCitySelect.setCallBack(new DialogCitySelect.CallBack() {
@@ -15,6 +16,7 @@
                 });
     dialogCitySelect.show();
 
+###添加依赖
 
     Add it in your root build.gradle at the end of repositories:
 
