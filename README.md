@@ -30,6 +30,8 @@
 
     	dependencies {
     	        compile 'com.github.yylxy:AddressSelect:1.1'
+    	        //json解析工具
+    	        compile 'com.google.code.gson:gson:2.8.0'
     	}
 
 
