@@ -34,9 +34,9 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
     //地址选择
-    compile 'com.github.yylxy:AddressSelect:1.4'
+//    compile 'com.github.yylxy:AddressSelect:1.4'
     //引入第三方库
-//    compile project(':dialogselectaddress')
+    compile project(':dialogselectaddress')
 
 
 }
