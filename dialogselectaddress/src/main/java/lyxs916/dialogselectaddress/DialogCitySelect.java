@@ -256,9 +256,10 @@ public class DialogCitySelect extends Dialog implements View.OnClickListener {
                     county.setArrayList(countys);
                     city.setInitPosition(0);
                     county.setInitPosition(0);
-
                     addData(citys.get(0), 2);
                     addData(countys.get(0), 3);
+                    addCity(pccData.provinceId, pccData.cityId);
+
                     return;
                 }
             }
